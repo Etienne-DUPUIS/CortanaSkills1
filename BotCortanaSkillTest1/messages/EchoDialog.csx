@@ -45,11 +45,8 @@ public class EchoDialog : IDialog<object>
             //reply.Speak("I said too many things and {message.Text}");
             //reply.InputHint = InputHints.ExpectingInput;
             //await context.PostAsync(reply);
-<<<<<<< HEAD
-            await context.PostAsync("  {this.count++}: You said {message.Text}");
-=======
+
             await context.PostAsync("{this.count++}: You said {message.Text}");
->>>>>>> 905332d7c691d28d758577503004cec707a453cc
             context.Wait(MessageReceivedAsync);
         }
     }
